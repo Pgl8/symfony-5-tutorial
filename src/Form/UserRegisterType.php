@@ -18,7 +18,7 @@ class UserRegisterType extends AbstractType
             ->add('name')
             ->add('email', EmailType::class)
             ->add('password', PasswordType::class)
-            ->add('registered', SubmitType::class)
+            ->add('submit', SubmitType::class)
         ;
     }
 

@@ -16,6 +16,14 @@
     {% endfor %}
 </div>
 <div class="form-wrapper">
-    {{form(form)}}
+    {{ form_start(form) }}
+    {{ form_errors(form) }}
+
+    {{ form_row(form.name) }}
+    {{ form_row(form.email) }}
+    {{ form_row(form.password) }}
+
+    {{ form_row(form.submit, { 'label': 'Submit' }) }}
+    {{ form_end(form) }}
 </div>
 {% endblock %}

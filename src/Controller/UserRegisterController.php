@@ -28,6 +28,7 @@ class UserRegisterController extends AbstractController
             $entity_manager->persist($user);
             $entity_manager->flush();
             $this->addFlash('success', 'User has been registered successfully');
+
             return $this->redirectToRoute('user_register');
         }
 
